@@ -145,8 +145,12 @@ function getName(personObject) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+function appleIndex(appleArray) {
+  for(let i = 0; i < appleArray.length; i++){
+    if(appleArray[i] === 'apple'){
+      return i;
+    }
+  }
 }
 
 /**
