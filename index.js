@@ -44,7 +44,7 @@ function sayGoodbye(name) {
  * ### Challenge `temperatureCtoF`
  * 
  * @instructions
- * This function should take an a temperature in celsius as an argument,
+ * This function should take in a temperature in celsius as an argument,
  * and return the temperature in fahrenheit, rounded to the nearest whole number. 
  * 
  * For example, if we invoke `temperatureCtoF`
@@ -54,8 +54,10 @@ function sayGoodbye(name) {
  * Hint 1: The formula for converting celsius to fahrenheit is t*9/5 + 32 where t is the temperature in celsius.
  * Hint 2: There is a very easy way to round numbers in JS. Do a google search to find out how. 
 */
-function temperatureCtoF(/* code here */) {
-  /* code here */
+function temperatureCtoF(tempC) {
+  let tempF = tempC * 9/5 + 32;
+  tempF = Math.round(tempF);
+  return tempF
 }
 
 /**
